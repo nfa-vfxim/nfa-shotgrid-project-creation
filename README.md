@@ -1,3 +1,6 @@
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 # NFA ShotGrid Project Creation
 Command line script to automate ShotGrid project creation for all students at the Netherlands Filmacademy.
 

@@ -8,7 +8,7 @@ import requests
 import webbrowser
 
 
-class projectCreation:
+class ProjectCreation:
     def __init__(self):
         print("NFA ShotGrid Project Creator")
         print("\n")
@@ -28,7 +28,9 @@ class projectCreation:
         if self.__get_user():
             self.create_project()
 
-        input("Press 'enter' to continue... Or just look at this beautiful command prompt window :)")
+        input(
+            "Press 'enter' to continue... Or just look at this beautiful command prompt window :)"
+        )
 
     def create_project(self):
         # Project name
@@ -215,7 +217,9 @@ class projectCreation:
                 if not found_supervisor_id in supervisor_ids:
                     supervisor_ids.append(found_supervisor_id)
                     supervisor_names.append(found_supervisor_name)
-                    print("Added %s to the list of supervisors." % found_supervisor_name)
+                    print(
+                        "Added %s to the list of supervisors." % found_supervisor_name
+                    )
                     print("\n")
 
                 else:
@@ -630,8 +634,11 @@ class projectCreation:
 
     # Open the project in webbrowser according to id
     def __open_project(self, id):
-        url = "https://nfa.shotgunstudio.com/page/project_overview?project_id=" + str(id)
+        url = "https://nfa.shotgunstudio.com/page/project_overview?project_id=" + str(
+            id
+        )
         webbrowser.open(url, new=2)
 
+
 # When this script is run, run the main class
-projectCreation()
+ProjectCreation()
